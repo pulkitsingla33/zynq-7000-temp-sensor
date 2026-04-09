@@ -65,15 +65,15 @@ The custom I²C master controller implements a **47-state FSM**:
 ## 📁 File Structure
 
 ```
-├── rtl
-    ├── top.v                  # Top-level module — integrates all submodules
-    ├── i2c_master.v           # Custom I²C master FSM (47 states)
-    ├── master_control.v       # Periodic reset controller (triggers I²C every ~1 second)
-    ├── led_controller.v       # LED logic for temperature change indication
-    └── ssd.v                  # Seven-segment display multiplexer and decoder
-├── sim
-    └── i2c_master_tb.v        # Testbench for simulation
-└── constr
+├── rtl/
+|    ├── top.v                  # Top-level module — integrates all submodules
+|    ├── i2c_master.v           # Custom I²C master FSM (47 states)
+|    ├── master_control.v       # Periodic reset controller (triggers I²C every ~1 second)
+|    ├── led_controller.v       # LED logic for temperature change indication
+|    └── ssd.v                  # Seven-segment display multiplexer and decoder
+├── sim/
+|    └── i2c_master_tb.v        # Testbench for simulation
+└── constr/
     └── i2c_module.xdc         # Constraints File for Zynq-7000 FPGA
 ```
 

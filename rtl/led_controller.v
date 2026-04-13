@@ -1,6 +1,11 @@
 `timescale 1ns / 1ps
 
-//LED Controller Module
+/*
+LED Controller Module
+This module controls the state of the LEDs based on the changes in the temperature value read from the sensor.
+When the temperature increases, one more LED glows, and when the temperature decreases, one more LED dims.
+*/
+
 module led_controller(
     input clk,
     output reg [7:0] led_bits,

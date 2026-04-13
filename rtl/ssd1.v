@@ -12,7 +12,7 @@ module ssd1(
     reg ms_pulse = 0;
     wire [3:0] tens;
       wire [3:0] ones;
-//    `
+    `
     assign tens = display_value / 10;
     assign ones = display_value % 10;
     
